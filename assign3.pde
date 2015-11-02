@@ -17,7 +17,7 @@ void setup () {
   z = floor(random(50,380));
   a = floor(random(200));
   e = floor(random(100,380));
-  f = floor(random(100,180));
+  f = floor(random(180));
   
   size(640,480) ;
   bg1 = loadImage("img/bg1.png") ;
