@@ -1,10 +1,74 @@
-//You should implement your assign3 here.
+PImage bg1;
+PImage hp;
+PImage fighter;
+PImage treasure;
+PImage enemy;
+PImage bg2;
+
+
+int x,y,z,a,b,c,e,f;
+
+
 
 void setup () {
-  size(640, 480) ;
-
+  b=1;
+  c=-639;
+  y = floor(random(100,540));
+  z = floor(random(50,380));
+  a = floor(random(200));
+  e = floor(random(100,380));
+  f = floor(random(100,180));
+  
+  size(640,480) ;
+  bg1 = loadImage("img/bg1.png") ;
+  bg2 = loadImage("img/bg2.png") ;
+  hp = loadImage("img/hp.png") ;
+  fighter = loadImage("img/fighter.png") ;
+  treasure = loadImage("img/treasure.png") ;
+  enemy = loadImage("img/enemy.png") ;
 }
 
 void draw() {
-
-}
+  if(b==639){b=-639;}
+  if(c==639){c=-639;}
+  if(x>=1980){x=-450;}
+  x=x+3;
+  
+  
+  
+  
+  image(bg1,b++,0);
+  image(bg2,c++,0);
+  stroke(255,0,0);
+  fill(255,0,0);
+  rect(21,15,a,15);
+  image(hp,10,10);
+  image(fighter,550,240);
+  image(treasure,y,z);
+  //
+  image(enemy,0+x,e);
+  image(enemy,100+x,e);
+  image(enemy,200+x,e);
+  image(enemy,300+x,e);
+  image(enemy,400+x,e);
+  //
+  image(enemy,-300+x,f+50);
+  image(enemy,-400+x,f+100);
+  image(enemy,-500+x,f+150);
+  image(enemy,-600+x,f+200);
+  image(enemy,-700+x,f+250);
+  //
+  image(enemy,-1000+x,f+150);
+  image(enemy,-1100+x,f+100);
+  image(enemy,-1200+x,f+50);
+  image(enemy,-1300+x,f+100);
+  image(enemy,-1100+x,f+200);
+  image(enemy,-1300+x,f+200);
+  image(enemy,-1400+x,f+150);
+  image(enemy,-1200+x,f+250);
+  
+  
+  
+  
+  
+ }
