@@ -31,7 +31,7 @@ void setup () {
 void draw() {
   if(b==639){b=-639;}
   if(c==639){c=-639;}
-  if(x>=1980){x=-450;}
+  if(x>=2850){x=-450;}
   x=x+3;
   
   
@@ -52,20 +52,20 @@ void draw() {
   image(enemy,300+x,e);
   image(enemy,400+x,e);
   //
-  image(enemy,-300+x,f+50);
-  image(enemy,-400+x,f+100);
-  image(enemy,-500+x,f+150);
-  image(enemy,-600+x,f+200);
-  image(enemy,-700+x,f+250);
+  image(enemy,-700+x,f+50);
+  image(enemy,-800+x,f+100);
+  image(enemy,-900+x,f+150);
+  image(enemy,-1000+x,f+200);
+  image(enemy,-1100+x,f+250);
   //
-  image(enemy,-1000+x,f+150);
-  image(enemy,-1100+x,f+100);
-  image(enemy,-1200+x,f+50);
-  image(enemy,-1300+x,f+100);
-  image(enemy,-1100+x,f+200);
-  image(enemy,-1300+x,f+200);
-  image(enemy,-1400+x,f+150);
-  image(enemy,-1200+x,f+250);
+  image(enemy,-1800+x,f+150);
+  image(enemy,-1900+x,f+100);
+  image(enemy,-2000+x,f+50);
+  image(enemy,-2100+x,f+100);
+  image(enemy,-1900+x,f+200);
+  image(enemy,-2100+x,f+200);
+  image(enemy,-2200+x,f+150);
+  image(enemy,-2000+x,f+250);
   
   
   
