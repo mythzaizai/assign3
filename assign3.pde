@@ -17,7 +17,8 @@ void setup () {
   z = floor(random(50,380));
   a = floor(random(200));
   e = floor(random(100,380));
-  f = floor(random(150));
+  f = floor(random(50,150));
+  g = floor(random(50,150));
   
   size(640,480) ;
   bg1 = loadImage("img/bg1.png") ;
@@ -31,7 +32,12 @@ void setup () {
 void draw() {
   if(b==639){b=-639;}
   if(c==639){c=-639;}
-  if(x>=2850){x=-450;}
+  if(x>=2850){
+  x=-450;
+  e = floor(random(100,380));
+  f = floor(random(50,150));
+  g = floor(random(50,150));
+  }
   x=x+3;
   
   
@@ -58,14 +64,14 @@ void draw() {
   image(enemy,-1000+x,f+200);
   image(enemy,-1100+x,f+250);
   //
-  image(enemy,-1800+x,f+150);
-  image(enemy,-1900+x,f+100);
-  image(enemy,-2000+x,f+50);
-  image(enemy,-2100+x,f+100);
-  image(enemy,-1900+x,f+200);
-  image(enemy,-2100+x,f+200);
-  image(enemy,-2200+x,f+150);
-  image(enemy,-2000+x,f+250);
+  image(enemy,-1800+x,g+150);
+  image(enemy,-1900+x,g+100);
+  image(enemy,-2000+x,g+50);
+  image(enemy,-2100+x,g+100);
+  image(enemy,-1900+x,g+200);
+  image(enemy,-2100+x,g+200);
+  image(enemy,-2200+x,g+150);
+  image(enemy,-2000+x,g+250);
   
   
   
