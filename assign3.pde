@@ -4,7 +4,9 @@ PImage fighter;
 PImage treasure;
 PImage enemy;
 PImage bg2;
-
+//123
+//123
+//123
 
 int x,y,z,a,b,c,e,f,g;
 
