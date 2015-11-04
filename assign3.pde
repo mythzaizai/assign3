@@ -35,10 +35,10 @@ void draw() {
   if(x>=2850){
   x=-450;
   e = floor(random(100,380));
-  f = floor(random(50,150));
-  g = floor(random(50,150));
+  f = floor(random(20,150));
+  g = floor(random(20,150));
   }
-  x=x+3;
+  x=x+20;
   
   
   
