@@ -6,7 +6,7 @@ PImage enemy;
 PImage bg2;
 
 
-int x,y,z,a,b,c,e,f;
+int x,y,z,a,b,c,e,f,g;
 
 
 
@@ -15,10 +15,11 @@ void setup () {
   c=-639;
   y = floor(random(100,540));
   z = floor(random(50,380));
-  a = floor(random(200));
+  a = floor(random(20,180));
   e = floor(random(100,380));
   f = floor(random(50,150));
   g = floor(random(50,150));
+  
   
   size(640,480) ;
   bg1 = loadImage("img/bg1.png") ;
@@ -32,13 +33,14 @@ void setup () {
 void draw() {
   if(b==639){b=-639;}
   if(c==639){c=-639;}
-  if(x>=2850){
-  x=-450;
+  if(x>=2850){x=-450;
   e = floor(random(100,380));
-  f = floor(random(20,150));
-  g = floor(random(20,150));
-  }
-  x=x+20;
+  f = floor(random(150));
+  g = floor(random(150));
+  
+}
+  x=x+5;
+ 
   
   
   
@@ -78,3 +80,4 @@ void draw() {
   
   
  }
+
